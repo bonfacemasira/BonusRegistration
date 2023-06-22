@@ -29,6 +29,12 @@ table 65400 "MNB Bonus Header"
             Caption = 'Ending Date';
             DataClassification = CustomerContent;
         }
+
+        field(5; Status; Enum "MNB Bonus Header Status")
+        {
+            Caption = 'Status';
+            DataClassification = CustomerContent;
+        }
     }
     
     keys
