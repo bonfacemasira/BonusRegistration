@@ -2,6 +2,8 @@ table 65400 "MNB Bonus Header"
 {
     Caption = 'Bonus';
     DataClassification = CustomerContent;
+    DrillDownPageId = "MNB Bonus List";
+    LookupPageId = "MNB Bonus List";
     
     fields
     {
@@ -18,7 +20,7 @@ table 65400 "MNB Bonus Header"
             // TableRelation = 'Customer';
         }
 
-        field(3; "Starting Date"; Date)
+        field(3; "Satrting Date"; Date)
         {
             Caption = 'Starting Date';
             DataClassification = CustomerContent;

@@ -25,7 +25,7 @@ page 65400 "MNB Bonus List"
                     ToolTip = 'Specifies the customer number.';
                 }
 
-                field("Starting Date"; Rec. "Starting Date")
+                field("Starting Date"; Rec. "Satrting Date")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the starting date.';
@@ -43,10 +43,6 @@ page 65400 "MNB Bonus List"
                     ToolTip = 'Specifies the bonus status.';
                 }
             }
-        }
-        area(Factboxes)
-        {
-            
         }
     }
     
