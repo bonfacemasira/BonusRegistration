@@ -1,9 +1,11 @@
 page 65400 "MNB Bonus List"
 {
+    Caption='Bonuses';
     PageType = List;
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = "MNB Bonus Header";
+    Editable = false;
     
     layout
     {
@@ -16,6 +18,30 @@ page 65400 "MNB Bonus List"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the bonus number';
                 }
+                
+                field("Customer No."; Rec. "Customer No.")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the customer number.';
+                }
+
+                field("Starting Date"; Rec. "Starting Date")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the starting date.';
+                }
+
+                field("Ending Date"; Rec. "Ending Date")
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the ending date.';
+                }
+
+                field(Status; Rec. Status)
+                {
+                    ApplicationArea = All;
+                    ToolTip = 'Specifies the bonus status.';
+                }
             }
         }
         area(Factboxes)
@@ -26,16 +52,16 @@ page 65400 "MNB Bonus List"
     
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
-            action(ActionName)
+            action(CustomerCard)
             {
+                Caption = 'Customer Card';
                 ApplicationArea = All;
-                
-                trigger OnAction();
-                begin
-                    
-                end;
+                ToolTip = 'Open customer card for the bonus.';
+                Image = Customer;
+                RunObject = page "Customer Card";
+                RunPageLink = "No." = field("Customer No.");
             }
         }
     }

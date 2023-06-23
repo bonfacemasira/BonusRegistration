@@ -18,9 +18,9 @@ table 65400 "MNB Bonus Header"
             // TableRelation = 'Customer';
         }
 
-        field(3; "Satrting Date"; Date)
+        field(3; "Starting Date"; Date)
         {
-            Caption = 'Satrting Date';
+            Caption = 'Starting Date';
             DataClassification = CustomerContent;
         }
 
