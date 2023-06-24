@@ -1,4 +1,4 @@
-# bonus-registration-extension
+# Bonus Registration Extension
 
 ## Business List
 ![Screenshot 2023-06-24 235802](https://github.com/bonfacemasira/BonusRegistration/assets/104436879/663909bf-0372-40e1-82df-c30ee34622da)
